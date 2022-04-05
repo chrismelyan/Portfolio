@@ -1,5 +1,5 @@
 .contactsBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #fcffd2;
 }
 
@@ -12,9 +12,9 @@
     background-color: #a4a29b;
 }
 
-.inputArea {
-    border: 1px solid darkred;
-    width: 500px;
+.formContainer {
+    border: 1px solid;
+    width: 280px;
     height: 100px;
     display: flex;
     flex-direction: column;

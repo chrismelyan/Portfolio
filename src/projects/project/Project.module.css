@@ -4,17 +4,26 @@
     background-color: #c6fff7;
 }
 
-.img {
+.imgContainer {
     background-color: #a4a29b;
     width: 100%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .link {
     background-color: grey;
+}
+
+.projectDescription {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .title {

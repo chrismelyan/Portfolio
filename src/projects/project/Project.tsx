@@ -9,10 +9,10 @@ type ProjectType = {
 const Project = (props: ProjectType) => {
     return (
         <div className={s.projectBlock}>
-            <div className={s.img}>
+            <div className={s.imgContainer}>
                 <a href={''} className={s.link}>watch</a>
             </div>
-            <div className={s.projectName}>
+            <div className={s.projectDescription}>
                 <h3 className={s.title}>{props.title}</h3>
                 <span className={s.description}>{props.description}</span>
             </div>
