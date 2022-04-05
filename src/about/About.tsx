@@ -8,7 +8,7 @@ const About = () => {
             <div className={styleContainer.container}>
                 <div className={s.about}>
                     <span>Hi there</span>
-                    <h1>I am Christina Mialyan</h1>
+                    <h1>I am Christina Melyan</h1>
                     <p>a frontend developer</p>
                 </div>
                 <div className={s.photo}/>
