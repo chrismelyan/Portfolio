@@ -1,0 +1,28 @@
+.contactsBlock {
+    height: 100vh;
+    background-color: #fcffd2;
+}
+
+.contactsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    background-color: #a4a29b;
+}
+
+.inputArea {
+    border: 1px solid darkred;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sendButton {
+    background-color: grey;
+    width: 100px;
+    height: 30px;
+}

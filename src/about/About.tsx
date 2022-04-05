@@ -11,7 +11,7 @@ const About = () => {
                     <h1>I am Christina Mialyan</h1>
                     <p>a frontend developer</p>
                 </div>
-                <div className={s.photo}></div>
+                <div className={s.photo}/>
             </div>
         </div>
     );
