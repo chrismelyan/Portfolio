@@ -1,12 +1,13 @@
 import React from 'react';
-import s from './Contacts.module.css'
+import s from './Contact.module.css'
 import stylesContainer from '../common/styles/Container.module.css'
+import Title from "../common/components/title/Title";
 
-const Contacts = () => {
+const Contact = () => {
     return (
-        <div className={s.contactsBlock}>
-            <div className={`${s.contactsContainer} ${stylesContainer.container}`}>
-                <h2 className={s.title}>Contacts</h2>
+        <div className={s.contactBlock}>
+            <div className={`${s.contactContainer} ${stylesContainer.container}`}>
+                <Title title={'contact me'}/>
                 <form className={s.formContainer}>
                     <input/>
                     <input/>
@@ -18,4 +19,4 @@ const Contacts = () => {
     );
 };
 
-export default Contacts;
+export default Contact;

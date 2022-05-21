@@ -1,15 +1,10 @@
-.contactsBlock {
+.contactBlock {
     min-height: 100vh;
-    background-color: #fcffd2;
 }
 
-.contactsContainer {
+.contactContainer {
     flex-direction: column;
     justify-content: flex-start;
-}
-
-.title {
-    background-color: #a4a29b;
 }
 
 .formContainer {
@@ -19,6 +14,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 30px;
 }
 
 .sendButton {

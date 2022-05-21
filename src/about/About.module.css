@@ -1,6 +1,8 @@
 .mainBlock {
     height: 100vh;
     background-color: #e5a7ff;
+    display: flex;
+    align-items: center;
 }
 
 .about {
@@ -11,5 +13,5 @@
 .photo {
     width: 350px;
     height: 400px;
-    background-color: #c084da;
+    background-color: #b86ee0;
 }
