@@ -8,7 +8,6 @@
 }
 
 .projects {
-    border: 1px solid darkblue;
     width: 100%;
     display: flex;
     justify-content: space-around;
