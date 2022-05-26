@@ -1,5 +1,8 @@
+@import '../common/styles/sass/variables';
+
 .projectsBlock {
     min-height: 100vh;
+    background-color: $secondBgColor;
     .projectsContainer {
         flex-direction: column;
         justify-content: flex-start;
@@ -9,7 +12,6 @@
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
-            margin-top: 30px;
         }
     }
 }

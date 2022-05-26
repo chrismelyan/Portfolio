@@ -1,13 +1,47 @@
 @import '../../common/styles/sass/mixins';
+@import '../../common/styles/sass/variables';
 
 .skill {
-    @include blockContainer(250px);
-    align-items: center;
-    text-align: center;
-}
+  @include blockContainer(250px);
+  margin: 20px auto;
+  align-items: center;
+  text-align: center;
+  padding: 25px 20px;
 
-.icon {
-    width: 60px;
-    height: 60px;
-    background-color: #a4a29b;
+  .icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  h3 {
+    color: $primaryColor;
+  }
+
+  .react {
+    @include skillsImage('../../assets/skills-image/icon-react.jpeg');
+  }
+
+  .html {
+    @include skillsImage('../../assets/skills-image/icon-html.png');
+  }
+
+  .javaScript {
+    @include skillsImage('../../assets/skills-image/icon-js.png');
+  }
+
+  .github {
+    @include skillsImage('../../assets/skills-image/icon-github.png');
+  }
+
+  .sass {
+    @include skillsImage('../../assets/skills-image/icon-sass.svg');
+  }
+
+  .redux {
+    @include skillsImage('../../assets/skills-image/icon-redux.png');
+  }
+
+  .material {
+    @include skillsImage('../../assets/skills-image/icon-material.png');
+  }
 }

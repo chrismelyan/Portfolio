@@ -2,7 +2,8 @@
 @import '../../common/styles/sass/mixins';
 
 .projectBlock {
-    @include blockContainer(500px);
+    @include blockContainer(400px);
+    margin: 20px auto;
     .imgContainer {
         background-color: #a4a29b;
         height: 300px;

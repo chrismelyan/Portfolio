@@ -40,3 +40,8 @@
   background: linear-gradient(159deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .95) 100%);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }
+
+@mixin skillsImage($image) {
+  background-image: url($image);
+  background-size: cover;
+}

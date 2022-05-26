@@ -7,9 +7,9 @@
     h1 {
         @include text(30px, 1.7, $headingColor);
         letter-spacing: 1px;
-        font-weight: 800;
+        font-weight: 500;
         margin: 0;
-        text-transform: capitalize;
+        text-transform: uppercase;
     }
     //&::before {
     //    content: '';
