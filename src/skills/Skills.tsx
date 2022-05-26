@@ -17,6 +17,7 @@ const Skills = () => {
                     <Skill title={'Redux'} description={'description of HTML and CSS'} icon={'redux'}/>
                     <Skill title={'GitHub'} description={'description of GitHub'} icon={'github'}/>
                     <Skill title={'Material UI'} description={'description of Material UI'} icon={'material'}/>
+                    <Skill title={'Self study'} description={'Love learning new things'} icon={'learn'}/>
                 </div>
             </div>
         </div>

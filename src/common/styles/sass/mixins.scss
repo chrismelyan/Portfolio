@@ -4,6 +4,7 @@
   font-size: $fontSize;
   line-height: $lineHeight;
   color: $color;
+  letter-spacing: .5px;
 }
 
 @mixin menuText($fontSize, $lineHeight, $color) {
@@ -37,6 +38,7 @@
   width: $width;
   display: flex;
   flex-direction: column;
+  border-radius: 3px;
   background: linear-gradient(159deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .95) 100%);
   box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
 }

@@ -1,5 +1,8 @@
+@import '../common/styles/sass/variables';
+
 .skillsBlock {
     min-height: 100vh;
+    background-color: $secondBgColor;
     .skillsContainer {
         display: flex;
         flex-direction: column;
@@ -7,6 +10,7 @@
         flex-wrap: wrap;
         .skills {
             width: 100%;
+            margin-top: 20px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;

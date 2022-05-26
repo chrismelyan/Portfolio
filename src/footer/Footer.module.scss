@@ -4,6 +4,7 @@
 .footer {
     height: 150px;
     background-color: $containerColor;
+    box-shadow: 0 3px 15px 0 rgba(15, 15, 20, 0.3);
     @include flexColumn();
     align-items: center;
     justify-content: space-evenly;

@@ -11,7 +11,7 @@
         background-size: cover;
     }
     .projectDescription {
-        padding: 25px 20px;
+        padding: 30px 35px;
         .projectTitle {
             @include text(17px, 1.2, $headingColor);
             @include block(0.6em, 0.6em, 0, 0);

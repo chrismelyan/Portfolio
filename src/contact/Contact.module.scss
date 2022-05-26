@@ -1,0 +1,16 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.contactBlock {
+    min-height: 82vh;
+    background-color: $secondBgColor;
+    .contactWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+}
+
+
+
+

@@ -44,4 +44,8 @@
   .material {
     @include skillsImage('../../assets/skills-image/icon-material.png');
   }
+
+  .learn {
+    @include skillsImage('../../assets/skills-image/icon-learn.png');
+  }
 }

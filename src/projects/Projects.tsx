@@ -19,8 +19,16 @@ const Projects = () => {
             <div className={`${s.projectsContainer} ${stylesContainer.container}`}>
                 <Title title={'projects'}/>
                 <div className={s.projects}>
-                    <Project style={todolist} title={'Todolist'} description={'sjdhfbvsdfbkshdbfkcsjdhb'}/>
-                    <Project style={social} title={'Social Network'} description={'sjdhfbvsdfbkshdsdfvsdfvbf sdkfjsdf asdkj sdfkj kcsjdhb'}/>
+                    <Project
+                        style={todolist}
+                        title={'Todolist'}
+                        description={'description of todolist project'}
+                    />
+                    <Project
+                        style={social}
+                        title={'Social Network'}
+                        description={'description of social network project'}
+                    />
                 </div>
             </div>
         </div>

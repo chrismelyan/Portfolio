@@ -2,13 +2,13 @@
 
 .projectsBlock {
     min-height: 100vh;
-    background-color: $secondBgColor;
     .projectsContainer {
         flex-direction: column;
         justify-content: flex-start;
         .projects {
             width: 100%;
             display: flex;
+            margin-top: 20px;
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
