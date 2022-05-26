@@ -6,15 +6,19 @@
     margin-right: 30px;
     display: flex;
     justify-content: space-between;
+
     .pageLink {
         @include menuText(15px, 1.7, $textColor);
         text-decoration: none;
         position: relative;
+
         &:hover {
             color: $primaryColor;
         }
+
         &.active {
             color: $primaryColor;
+
             &::before {
                 content: '';
                 width: 100%;
@@ -28,3 +32,11 @@
         }
     }
 }
+
+@media screen and (max-width: 416px) {
+    .nav {
+        margin: 0 20px;
+        width: 100%;
+    }
+}
+

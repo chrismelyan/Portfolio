@@ -63,4 +63,10 @@
       color: white;
     }
   }
+  @media screen and (max-width: 660px) {
+    width: 90%;
+  }
+  @media screen and (min-width: 661px) and (max-width: 880px){
+    width: 60%;
+  }
 }
