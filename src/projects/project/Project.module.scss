@@ -1,0 +1,45 @@
+@import '../../common/styles/sass/variables';
+@import '../../common/styles/sass/mixins';
+
+.projectBlock {
+    @include blockContainer(500px);
+    .imgContainer {
+        background-color: #a4a29b;
+        height: 300px;
+        @include flexCenter();
+        background-size: cover;
+    }
+    .projectDescription {
+        padding: 25px 20px;
+        .projectTitle {
+            @include text(17px, 1.2, $headingColor);
+            @include block(0.6em, 0.6em, 0, 0);
+        }
+        .description {
+            @include text(16px, 1.0, $textColor);
+            margin: 0 0 15px;
+        }
+        .imgLink {
+            color: $primaryColor;
+            font-weight: 600;
+            text-transform: uppercase;
+            display: inline-block;
+            letter-spacing: 1px;
+            text-decoration: none;
+            margin-top: 15px;
+            position: relative;
+            &::after {
+                content: '>';
+                color: $primaryColor;
+                font-weight: 700;
+                display: inline-block;
+                position: absolute;
+                left: 70px;
+            }
+            &:hover {
+                transition: .5s ease-in-out;
+                transform: translateX(10px);
+            }
+        }
+    }
+}

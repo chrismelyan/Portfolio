@@ -1,0 +1,33 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+
+.footer {
+    height: 150px;
+    background-color: $containerColor;
+    @include flexColumn();
+    align-items: center;
+    justify-content: space-evenly;
+    .name {
+        @include menuText(17px, 1.7, $textColor);
+    }
+    .block {
+        width: 250px;
+        height: 35px;
+        display: flex;
+        justify-content: space-between;
+        .item {
+            @include menuText(40px, 42px, $textColor);
+            width: 40px;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.5s;
+            &:hover {
+                color: $primaryColor;
+                cursor: pointer;
+            }
+        }
+    }
+    .allRights {
+        @include menuText(15px, 1.7, $textColor);
+    }
+}

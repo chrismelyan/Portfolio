@@ -1,8 +1,7 @@
+@import '../../common/styles/sass/mixins';
+
 .skill {
-    width: 250px;
-    background-color: #e7f9dc;
-    display: flex;
-    flex-direction: column;
+    @include blockContainer(250px);
     align-items: center;
     text-align: center;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Title.module.css'
+import s from './Title.module.scss'
 
 type TitleType = {
     title: string
@@ -8,7 +8,7 @@ type TitleType = {
 const Title = (props: TitleType) => {
     return (
         <div className={s.title}>
-            <h2>{props.title}</h2>
+            <h1>{props.title}</h1>
         </div>
     );
 };

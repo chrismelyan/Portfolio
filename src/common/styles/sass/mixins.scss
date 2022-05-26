@@ -1,0 +1,42 @@
+@import './variables';
+
+@mixin text($fontSize, $lineHeight, $color) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+}
+
+@mixin menuText($fontSize, $lineHeight, $color) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  color: $color;
+  font-weight: 400;
+  letter-spacing: .25px;
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexColumn() {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin block($blStart, $blEnd, $inlineStart, $inlineEnd) {
+  display: block;
+  margin-block-start: $blStart;
+  margin-block-end: $blEnd;
+  margin-inline-start: $inlineStart;
+  margin-inline-end: $inlineEnd;
+}
+
+@mixin blockContainer($width) {
+  width: $width;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(159deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .95) 100%);
+  box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+}
