@@ -2,15 +2,21 @@
 @import '../../common/styles/sass/variables';
 
 .skill {
-  @include blockContainer(250px);
-  margin: 20px auto;
+  @include blockContainer(260px);
+  margin: 80px auto;
   align-items: center;
   text-align: center;
   padding: 25px 20px;
 
   .icon {
-    width: 70px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
+  }
+  @media screen and (max-width: 693px) {
+    .icon {
+      width: 40px;
+      height: 40px;
+    }
   }
 
   h3 {
@@ -47,5 +53,19 @@
 
   .learn {
     @include skillsImage('../../assets/skills-image/icon-learn.png');
+  }
+
+  .typescript {
+    @include skillsImage('../../assets/skills-image/icon-typescript.svg');
+  }
+
+  @media screen and (max-width: 693px) {
+    .skill {
+      @include blockContainer(60px);
+      margin: 10px auto;
+      align-items: center;
+      text-align: center;
+      padding: 5px 10px;
+    }
   }
 }

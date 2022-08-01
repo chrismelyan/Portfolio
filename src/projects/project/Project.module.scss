@@ -5,7 +5,6 @@
     @include blockContainer(400px);
     margin: 20px auto;
     .imgContainer {
-        background-color: #a4a29b;
         height: 300px;
         @include flexCenter();
         background-size: cover;

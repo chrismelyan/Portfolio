@@ -1,4 +1,5 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 
 .skillsBlock {
     min-height: 100vh;
@@ -8,6 +9,11 @@
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
+        .paragraph {
+            @include text(18px, 1.5, $headingColor);
+            text-align: center;
+            margin: 20px 55px;
+        }
         .skills {
             width: 100%;
             margin-top: 20px;
