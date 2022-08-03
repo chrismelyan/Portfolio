@@ -14,7 +14,7 @@ const Fade = require("react-reveal/Fade");
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div id={'skills'} className={s.skillsBlock}>
             <div className={`${s.skillsContainer} ${stylesContainer.container}`}>
                 <Fade top>
                     <Title title={'skills'}/>

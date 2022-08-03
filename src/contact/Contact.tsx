@@ -8,7 +8,7 @@ const Fade = require('react-reveal/Fade');
 
 const Contact = () => {
     return (
-        <div className={s.contactBlock}>
+        <div id={'contact'} className={s.contactBlock}>
             <Fade>
                 <div className={`${s.contactWrapper} ${stylesContainer.container}`}>
                     <Title title={'contact me'}/>

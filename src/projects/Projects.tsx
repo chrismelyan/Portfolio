@@ -17,7 +17,7 @@ const Projects = () => {
     };
 
     return (
-        <div className={s.projectsBlock}>
+        <div id={'projects'} className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${stylesContainer.container}`}>
                 <Fade top>
                     <Title title={'projects'}/>
@@ -28,6 +28,7 @@ const Projects = () => {
                             style={todolist}
                             title={'Todolist'}
                             description={'description of todolist project'}
+                            link={'https://chrismelyan.github.io/TodoList/'}
                         />
                     </Fade>
                     <Fade right>
@@ -35,6 +36,7 @@ const Projects = () => {
                             style={social}
                             title={'Social Network'}
                             description={'description of social network project'}
+                            link={'https://chrismelyan.github.io/Social-Network/'}
                         />
                     </Fade>
                 </div>

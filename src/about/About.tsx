@@ -9,7 +9,7 @@ const Fade = require("react-reveal/Fade");
 
 const About = () => {
     return (
-        <div className={s.mainBlock}>
+        <div id={'about'} className={s.mainBlock}>
             <div className={stylesContainer.container}>
                 <div className={s.backgroundPicture}>
                     <Fade>

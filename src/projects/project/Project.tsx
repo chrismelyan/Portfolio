@@ -5,6 +5,7 @@ type ProjectType = {
     title: string
     description: string
     style: { backgroundImage: string }
+    link: string
 }
 
 const Project = (props: ProjectType) => {
@@ -15,7 +16,7 @@ const Project = (props: ProjectType) => {
                 <h5 className={s.projectTitle}>{props.title}</h5>
                 <span className={s.description}>{props.description}</span>
                 <div>
-                    <a href={''} className={s.imgLink}>Watch</a>
+                    <a href={props.link} className={s.imgLink}>Watch</a>
                 </div>
             </div>
         </div>
