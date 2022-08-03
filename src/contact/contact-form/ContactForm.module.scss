@@ -45,28 +45,14 @@
       resize: none;
     }
   }
-
-  .sendButton {
-    background-color: $primaryColor;
-    @include text(12px, 1, $headingColor);
+  .buttonContainer {
     width: 40%;
-    height: 40px;
-    border: none;
-    border-radius: 3px;
-    align-self: center;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    font-weight: 600;
-    cursor: pointer;
-
-    &:hover {
-      color: white;
-    }
   }
   @media screen and (max-width: 660px) {
     width: 90%;
   }
-  @media screen and (min-width: 661px) and (max-width: 880px){
+
+  @media screen and (min-width: 661px) and (max-width: 880px) {
     width: 60%;
   }
 }

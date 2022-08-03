@@ -1,5 +1,6 @@
 import React from 'react';
 import s from './ContactForm.module.scss';
+import Button from "../../common/components/button/Button";
 
 const ContactForm = () => {
     return (
@@ -9,7 +10,9 @@ const ContactForm = () => {
                 <input className={s.textField} placeholder={'Your email'}/>
                 <textarea className={s.textarea} placeholder={'Your message'}/>
             </form>
-            <button className={s.sendButton}>Send</button>
+            <div className={s.buttonContainer}>
+                <Button title={'send'} callback={() => {}}/>
+            </div>
         </div>
     );
 };
