@@ -34,7 +34,6 @@ const Footer = () => {
                 </a>
             </div>
             <span className={s.allRights}>Copyright © 2022 All rights reserved</span>
-
         </div>
     );
 };

@@ -6,6 +6,8 @@ import Title from '../common/components/title/Title';
 import socialImg from '../assets/image/social-network.png';
 import todolistImg from '../assets/image/todolist.png';
 
+const Fade = require("react-reveal/Fade");
+
 const Projects = () => {
     const social = {
         backgroundImage: `url(${socialImg})`,
@@ -17,18 +19,24 @@ const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${stylesContainer.container}`}>
-                <Title title={'projects'}/>
+                <Fade top>
+                    <Title title={'projects'}/>
+                </Fade>
                 <div className={s.projects}>
-                    <Project
-                        style={todolist}
-                        title={'Todolist'}
-                        description={'description of todolist project'}
-                    />
-                    <Project
-                        style={social}
-                        title={'Social Network'}
-                        description={'description of social network project'}
-                    />
+                    <Fade left>
+                        <Project
+                            style={todolist}
+                            title={'Todolist'}
+                            description={'description of todolist project'}
+                        />
+                    </Fade>
+                    <Fade right>
+                        <Project
+                            style={social}
+                            title={'Social Network'}
+                            description={'description of social network project'}
+                        />
+                    </Fade>
                 </div>
             </div>
         </div>

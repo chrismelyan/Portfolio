@@ -3,27 +3,31 @@ import s from './Skills.module.scss'
 import stylesContainer from '../common/styles/Container.module.css'
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
-import { Swiper, SwiperSlide } from "swiper/react";
+import {Swiper, SwiperSlide} from "swiper/react";
 import {Pagination, Navigation, Mousewheel, Keyboard} from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./skill/styles.css";
 
+const Fade = require("react-reveal/Fade");
+
 const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${s.skillsContainer} ${stylesContainer.container}`}>
-                <Title title={'skills'}/>
-                <div className={s.paragraph}>
-                    <p>
-                        I have experience in creating SPA using Typescript / React / Redux.
-                        Now working on improving my skills in React and looking for
-                        an entry-level position as a React Front-end Developer.
-                        I am passionate about learning and development. Enjoy working with team members and looking
-                        forward to applying my passion for coding to a talented team to develop quality solutions.
-                    </p>
-                </div>
+                <Fade top>
+                    <Title title={'skills'}/>
+                    <div className={s.paragraph}>
+                        <p>
+                            I have experience in creating SPA using Typescript / React / Redux.
+                            Now working on improving my skills in React and looking for
+                            an entry-level position as a React Front-end Developer.
+                            I am passionate about learning and development. Enjoy working with team members and looking
+                            forward to applying my passion for coding to a talented team to develop quality solutions.
+                        </p>
+                    </div>
+                </Fade>
                 <Swiper
                     slidesPerView={3}
                     spaceBetween={20}
