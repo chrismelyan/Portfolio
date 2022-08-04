@@ -11,7 +11,7 @@ const ContactForm = () => {
                 <textarea className={s.textarea} placeholder={'Your message'}/>
             </form>
             <div className={s.buttonContainer}>
-                <Button title={'send'} callback={() => {}}/>
+                <Button style={s.button} title={'send'} callback={() => {}}/>
             </div>
         </div>
     );

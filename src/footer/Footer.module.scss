@@ -2,33 +2,49 @@
 @import '../common/styles/sass/mixins';
 
 .footer {
-    height: 150px;
+    height: 100px;
+    width: 100%;
     background-color: $containerColor;
     box-shadow: 0 3px 15px 0 rgba(15, 15, 20, 0.3);
-    @include flexColumn();
+    display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    .name {
-        @include menuText(17px, 1.7, $textColor);
-    }
-    .block {
-        width: 250px;
-        height: 35px;
+    justify-content: center;
+
+    .footerContainer {
+        width: 80%;
+        height: 100%;
+        padding: 15px;
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: space-between;
-        .item {
-            @include menuText(40px, 42px, $textColor);
-            width: 40px;
-            display: inline-block;
-            text-align: center;
-            transition: all 0.5s;
-            &:hover {
-                color: $primaryColor;
-                cursor: pointer;
+
+        .name {
+            @include menuText(22px, 1.7, $textColor);
+        }
+
+        .block {
+            width: 250px;
+            height: 23px;
+            display: flex;
+            justify-content: space-between;
+
+            .item {
+                @include menuText(40px, 42px, $textColor);
+                height: 100%;
+                display: inline-block;
+                text-align: center;
+                transition: all 0.5s;
+
+                &:hover {
+                    color: $primaryColor;
+                    cursor: pointer;
+                }
             }
         }
-    }
-    .allRights {
-        @include menuText(15px, 1.7, $textColor);
+
+        .allRights {
+            @include menuText(12px, 1.7, $textColor);
+        }
     }
 }

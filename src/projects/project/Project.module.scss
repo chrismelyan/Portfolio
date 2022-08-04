@@ -8,6 +8,8 @@
         height: 300px;
         @include flexCenter();
         background-size: cover;
+        border-top-right-radius: 3px;
+        border-top-left-radius: 3px;
     }
     .projectDescription {
         padding: 30px 35px;
@@ -28,6 +30,7 @@
             text-decoration: none;
             margin-top: 15px;
             position: relative;
+            transition: .5s ease-in-out;
             &::after {
                 content: '>';
                 color: $primaryColor;
@@ -35,10 +38,10 @@
                 display: inline-block;
                 position: absolute;
                 left: 70px;
+                transition: .5s ease-in-out;
             }
             &:hover {
-                transition: .5s ease-in-out;
-                transform: translateX(10px);
+                transform: translateX(15px);
             }
         }
     }

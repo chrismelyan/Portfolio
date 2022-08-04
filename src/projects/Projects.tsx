@@ -15,6 +15,9 @@ const Projects = () => {
     const todolist = {
         backgroundImage: `url(${todolistImg})`,
     };
+    const cards = {
+        backgroundImage: `url(${todolistImg})`,
+    }
 
     return (
         <div id={'projects'} className={s.projectsBlock}>
@@ -32,6 +35,12 @@ const Projects = () => {
                         />
                     </Fade>
                     <Fade right>
+                        <Project
+                            style={cards}
+                            title={'Learning App'}
+                            description={'description of social network project'}
+                            link={'https://chrismelyan.github.io/Social-Network/'}
+                        />
                         <Project
                             style={social}
                             title={'Social Network'}

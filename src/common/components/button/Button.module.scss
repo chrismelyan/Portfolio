@@ -3,7 +3,7 @@
 
 .button {
   background-color: $primaryColor;
-  @include text(12px, 1, $headingColor);
+  @include text(12px, 1, $frontPageTitleColor);
   width: 100%;
   height: 40px;
   border: none;
@@ -14,9 +14,5 @@
   letter-spacing: 1.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: ease-in-out color 0.5s;
-
-  &:hover {
-    color: white;
-  }
+  transition: ease-in-out background-color 0.5s, color 0.5s;
 }

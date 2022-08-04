@@ -14,22 +14,22 @@ const About = () => {
                 <div className={s.backgroundPicture}>
                     <Fade>
                         <div className={s.about}>
-                                <h1>Christina Melyan</h1>
-                                <ReactTypingEffect
-                                    className={s.text}
-                                    speed={70}
-                                    eraseSpeed={70}
-                                    eraseDelay={1000}
-                                    text={'<code> a frontend developer </code>'}
-                                />
-                                <div className={s.buttonContainer}>
-                                    <Button title={'download CV'} callback={() => {
-                                    }}/>
-                                </div>
+                            <span>Hi there</span>
+                            <h1>I am</h1>
+                            <h1>Christina Melyan</h1>
+                            <ReactTypingEffect
+                                className={s.text}
+                                speed={70}
+                                eraseSpeed={70}
+                                eraseDelay={1000}
+                                text={'<code> a frontend developer </code>'}
+                            />
+                            <div className={s.buttonContainer}>
+                                <Button style={s.button} title={'download CV'} callback={() => {
+                                }}/>
+                            </div>
                         </div>
-                        <div className={s.photo}>
                             <img src={photo} alt={'avatar'}/>
-                        </div>
                     </Fade>
                 </div>
             </div>

@@ -28,6 +28,7 @@
       box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.2);
       box-sizing: border-box;
       outline: none;
+
       &:-webkit-autofill {
         border: none;
         -webkit-text-fill-color: #1f1f20;
@@ -37,6 +38,7 @@
         box-shadow: inset 0 1px 4px 0 rgba(15, 15, 20, 0.2);
         box-sizing: border-box;
         outline: none;
+
         &:focus {
           border: none;
           box-sizing: border-box;
@@ -44,10 +46,12 @@
         }
       }
     }
+
     .textField {
       width: 100%;
       height: 50px;
     }
+
     .textarea {
       width: 100%;
       height: 120px;
@@ -55,9 +59,16 @@
       resize: none;
     }
   }
+
   .buttonContainer {
     width: 40%;
+    .button {
+      &:hover {
+        color: $headingColor;
+      }
+    }
   }
+
   @media screen and (max-width: 660px) {
     width: 90%;
   }
