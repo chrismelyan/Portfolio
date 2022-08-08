@@ -2,31 +2,55 @@
 @import '../common/styles/sass/mixins';
 
 .skillsBlock {
-    min-height: 100vh;
-    background-color: $secondBgColor;
-    .skillsContainer {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: wrap;
-        .paragraph {
-            @include text(18px, 1.5, $headingColor);
-            text-align: center;
-            margin: 20px 55px;
-        }
+  min-height: 100vh;
+  position: relative;
+
+  &::after {
+    content: "";
+    background: url('../assets/image/background.jpeg');
+    background-size: cover;
+    opacity: 0.4;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .skillsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+    .skillsWrapper {
+      width: 100%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+
+      .paragraph {
+        width: 65%;
+        @include text(22px, 1.5, $headingColor);
+        padding: 40px;
+        //text-align: center;
+      }
+
+      .skills {
+        margin-top: 20px;
+        margin-right: 50px;
+        width: 100%;
+      }
+
+      @media screen and (max-width: 634px) {
         .skills {
-            width: 100%;
-            margin-top: 20px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+          justify-content: center;
         }
-        @media screen and (max-width: 634px) {
-            .skills {
-                justify-content: center;
-            }
-        }
+      }
     }
+  }
 }
 
 

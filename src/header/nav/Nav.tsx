@@ -17,15 +17,6 @@ const Nav = () => {
             <Link
                 className={s.pageLink}
                 activeClass={s.active}
-                to={'skills'}
-                spy={true}
-                smooth={true}
-                offset={1}
-                duration={500}
-            >Skills</Link>
-            <Link
-                className={s.pageLink}
-                activeClass={s.active}
                 to={'projects'}
                 spy={true}
                 smooth={true}
@@ -35,10 +26,19 @@ const Nav = () => {
             <Link
                 className={s.pageLink}
                 activeClass={s.active}
+                to={'skills'}
+                spy={true}
+                smooth={true}
+                offset={1}
+                duration={500}
+            >Skills</Link>
+            <Link
+                className={s.pageLink}
+                activeClass={s.active}
                 to={'contact'}
                 spy={true}
                 smooth={true}
-                offset={5}
+                offset={7}
                 duration={500}
             >Contact</Link>
         </div>

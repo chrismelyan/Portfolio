@@ -23,18 +23,16 @@ const Projects = () => {
         <div id={'projects'} className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${stylesContainer.container}`}>
                 <Fade top>
-                    <Title title={'projects'}/>
+                    <Title title={'Here are a few of my projects'}/>
                 </Fade>
                 <div className={s.projects}>
-                    <Fade left>
+                    <Fade bottom>
                         <Project
                             style={todolist}
                             title={'Todolist'}
                             description={'description of todolist project'}
                             link={'https://chrismelyan.github.io/TodoList/'}
                         />
-                    </Fade>
-                    <Fade right>
                         <Project
                             style={cards}
                             title={'Learning App'}

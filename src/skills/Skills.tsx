@@ -4,10 +4,9 @@ import stylesContainer from '../common/styles/Container.module.css'
 import Skill from "./skill/Skill";
 import Title from "../common/components/title/Title";
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Pagination, Navigation, Mousewheel, Keyboard} from "swiper";
+import {EffectCards} from "swiper";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
+import "swiper/css/effect-cards";
 import "./skill/styles.css";
 
 const Fade = require("react-reveal/Fade");
@@ -17,60 +16,55 @@ const Skills = () => {
         <div id={'skills'} className={s.skillsBlock}>
             <div className={`${s.skillsContainer} ${stylesContainer.container}`}>
                 <Fade top>
-                    <Title title={'skills'}/>
+                    <Title title={'My tool belt for success'}/>
+                </Fade>
+                <div className={s.skillsWrapper}>
                     <div className={s.paragraph}>
                         <p>
                             I have experience in creating SPA using Typescript / React / Redux.
                             Now working on improving my skills in React and looking for
                             an entry-level position as a React Front-end Developer.
-                            I am passionate about learning and development. Enjoy working with team members and looking
-                            forward to applying my passion for coding to a talented team to develop quality solutions.
+                            I am passionate about learning and development. Enjoy working with team members and
+                            looking
+                            forward to applying my passion for coding to a talented team to develop quality
+                            solutions.
                         </p>
                     </div>
-                </Fade>
-                <Swiper
-                    slidesPerView={3}
-                    spaceBetween={20}
-                    slidesPerGroup={3}
-                    mousewheel={true}
-                    keyboard={true}
-                    loop={true}
-                    loopFillGroupWithBlank={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation, Mousewheel, Keyboard]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <Skill title={'HTML'} description={'description of HTML and CSS'} icon={'html'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'JavaScript'} description={'description of Javascript'} icon={'javaScript'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'CSS/SASS'} description={'description of CSS and SASS'} icon={'sass'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'TypeScript'} description={'description of Typescript'} icon={'typescript'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'React'} description={'description of React'} icon={'react'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'Redux'} description={'description of HTML and CSS'} icon={'redux'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'GitHub'} description={'description of GitHub'} icon={'github'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'Material UI'} description={'description of Material UI'} icon={'material'}/>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <Skill title={'Self study'} description={'Love learning new things'} icon={'learn'}/>
-                    </SwiperSlide>
-                </Swiper>
+                    <Swiper
+                        effect={"cards"}
+                        grabCursor={true}
+                        modules={[EffectCards]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide>
+                            <Skill title={'HTML'} icon={'html'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'JavaScript'} icon={'javaScript'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'CSS/SASS'} icon={'sass'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'TypeScript'} icon={'typescript'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'React'} icon={'react'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'Redux'} icon={'redux'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'GitHub'} icon={'github'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'Material UI'} icon={'material'}/>
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <Skill title={'Self study'} icon={'learn'}/>
+                        </SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
         </div>
     );
