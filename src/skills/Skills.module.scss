@@ -3,33 +3,19 @@
 
 .skillsBlock {
   min-height: 100vh;
-  position: relative;
-
-  &::after {
-    content: "";
-    background: url('../assets/image/background.jpeg');
-    background-size: cover;
-    opacity: 0.4;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;
-  }
+  background-color: $secondBgColor;
 
   .skillsContainer {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
 
     .skillsWrapper {
       width: 100%;
-      margin-top: 100px;
+      margin-top: 30px;
       display: flex;
       justify-content: space-between;
-      gap: 20px;
 
       .paragraph {
         width: 65%;
@@ -38,16 +24,25 @@
         //text-align: center;
       }
 
-      .skills {
-        margin-top: 20px;
-        margin-right: 50px;
-        width: 100%;
+      img {
+        //border: $primaryColor 3px solid;
+        background-color: rgba(23, 23, 23, 0.1);
+        border-radius: 100%;
+        width: 350px;
+        height: 350px;
       }
+    }
 
-      @media screen and (max-width: 634px) {
-        .skills {
-          justify-content: center;
-        }
+    .skills {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    @media screen and (max-width: 634px) {
+      .skills {
+        justify-content: center;
       }
     }
   }

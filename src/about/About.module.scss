@@ -8,8 +8,8 @@
   &::after {
     content: "";
     background: url('../assets/image/background.jpeg');
-    background-size: cover;
-    opacity: 0.4;
+    background-size: auto 120%;
+    //opacity: 0.4;
     top: 0;
     left: 0;
     bottom: 0;
@@ -20,30 +20,32 @@
 
   .backgroundPicture {
     width: 100%;
-    height: 78%;
-    background: url('../assets/image/background.jpeg');
-    background-size: cover;
-    box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
+    //height: 70%;
+    margin-top: 5%;
+    //background: url('../assets/image/background-two.png');
+    //background-size: 100% 100%;
+    //box-shadow: 0 3px 8px 0 rgba(15, 15, 20, 0.2);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     position: relative;
 
     .about {
       width: 100%;
-      height: 80%;
+      height: 75%;
       padding: 50px;
+      margin-top: 70px;
       display: flex;
       flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
+      align-items: center;
+      justify-content: flex-start;
 
       span {
         @include text(25px, 1, $frontPageTitleColor);
       }
 
       h1 {
-        @include text(65px, 0, $frontPageTitleColor);
+        @include text(75px, 0, $frontPageTitleColor);
         font-weight: 800;
         letter-spacing: 1px;
 
@@ -55,7 +57,7 @@
       }
 
       .text {
-        @include text(25px, 1, $frontPageTitleColor);
+        @include text(35px, 1, $frontPageTitleColor);
         @include block(0, 0, 0, 0);
         font-weight: 500;
         letter-spacing: 1px;
@@ -80,7 +82,7 @@
 
       .buttonContainer {
         width: 200px;
-        margin-top: 80px;
+        margin-top: 50px;
 
         .button {
           &:hover {
@@ -90,14 +92,6 @@
         }
       }
     }
-
-    img {
-      height: 110%;
-      position: absolute;
-      bottom: 0;
-      right: 40px;
-    }
-
   }
 }
 

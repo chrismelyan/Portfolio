@@ -5,6 +5,7 @@ import stylesContainer from '../common/styles/Container.module.css';
 import Title from '../common/components/title/Title';
 import socialImg from '../assets/image/social-network.png';
 import todolistImg from '../assets/image/todolist.png';
+import learningApp from '../assets/image/learning-app.png';
 
 const Fade = require("react-reveal/Fade");
 
@@ -16,7 +17,7 @@ const Projects = () => {
         backgroundImage: `url(${todolistImg})`,
     };
     const cards = {
-        backgroundImage: `url(${todolistImg})`,
+        backgroundImage: `url(${learningApp})`,
     }
 
     return (
@@ -37,7 +38,7 @@ const Projects = () => {
                             style={cards}
                             title={'Learning App'}
                             description={'description of social network project'}
-                            link={'https://chrismelyan.github.io/Social-Network/'}
+                            link={'https://sergeyichnik.github.io/projectFriday/'}
                         />
                         <Project
                             style={social}
