@@ -8,9 +8,10 @@ type ButtonPropsType = {
 }
 
 const Button = (props: ButtonPropsType) => {
+    debugger
     return (
         <div>
-            <button onClick={() => props.callback} className={`${s.button} ${props.style}`}>{props.title}</button>
+            <button onClick={props.callback} className={`${s.button} ${props.style}`}>{props.title}</button>
         </div>
     );
 };

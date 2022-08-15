@@ -3,11 +3,16 @@ import s from './About.module.scss';
 import stylesContainer from '../common/styles/Container.module.css';
 import ReactTypingEffect from 'react-typing-effect';
 import Button from "../common/components/button/Button";
+import myCV from '../assets/files/cv.pdf';
+import { saveAs } from "file-saver";
 
 const Fade = require("react-reveal/Fade");
 
 const About = () => {
-
+    const saveFile = () => {
+        debugger
+       saveAs(myCV, "CV_Melyan_FD.pdf");
+    }
 
     return (
         <div id={'about'} className={s.mainBlock}>
@@ -25,8 +30,7 @@ const About = () => {
                                 text={'<code> a frontend developer </code>'}
                             />
                             <div className={s.buttonContainer}>
-                                <Button style={s.button} title={'download CV'} callback={() => {
-                                }}/>
+                                <Button style={s.button} title={'download CV'} callback={saveFile}/>
                             </div>
                         </div>
                     </Fade>

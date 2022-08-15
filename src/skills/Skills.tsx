@@ -8,6 +8,15 @@ import photo from '../assets/image/photo.png';
 const Fade = require("react-reveal/Fade");
 
 const Skills = () => {
+    const skills = [
+        {id: 1, title: 'HTML', icon: 'html'},
+        {id: 2, title: 'JavaScript', icon: 'javaScript'},
+        {id: 3, title: 'TypeScript', icon: 'typescript'},
+        {id: 4, title: 'CSS/SASS', icon: 'sass'},
+        {id: 5, title: 'React', icon: 'react'},
+        {id: 6, title: 'Redux', icon: 'redux'},
+        {id: 7, title: 'GitHub', icon: 'github'}
+    ]
     return (
         <div id={'skills'} className={s.skillsBlock}>
             <div className={`${s.skillsContainer} ${stylesContainer.container}`}>
@@ -34,13 +43,9 @@ const Skills = () => {
                 </Fade>
                 <Fade right>
                     <div className={s.skills}>
-                        <Skill title={'HTML'} icon={'html'}/>
-                        <Skill title={'JavaScript'} icon={'javaScript'}/>
-                        <Skill title={'CSS/SASS'} icon={'sass'}/>
-                        <Skill title={'TypeScript'} icon={'typescript'}/>
-                        <Skill title={'React'} icon={'react'}/>
-                        <Skill title={'Redux'} icon={'redux'}/>
-                        <Skill title={'GitHub'} icon={'github'}/>
+                        {skills.map(s => (
+                            <Skill key={s.id} title={s.title} icon={s.icon}/>
+                        ))}
                     </div>
                 </Fade>
             </div>
