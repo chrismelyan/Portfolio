@@ -3,23 +3,10 @@ import s from './Projects.module.scss'
 import Project from './project/Project';
 import stylesContainer from '../common/styles/Container.module.css';
 import Title from '../common/components/title/Title';
-import socialImg from '../assets/image/social-network.png';
-import todolistImg from '../assets/image/todolist.png';
-import learningApp from '../assets/image/learning-app.png';
 
 const Fade = require("react-reveal/Fade");
 
 const Projects = () => {
-    const social = {
-        backgroundImage: `url(${socialImg})`,
-    };
-    const todolist = {
-        backgroundImage: `url(${todolistImg})`,
-    };
-    const cards = {
-        backgroundImage: `url(${learningApp})`,
-    }
-
     return (
         <div id={'projects'} className={s.projectsBlock}>
             <div className={`${s.projectsContainer} ${stylesContainer.container}`}>
@@ -29,22 +16,28 @@ const Projects = () => {
                 <div className={s.projects}>
                     <Fade bottom>
                         <Project
-                            style={todolist}
+                            img={"todolist"}
                             title={'Todolist'}
-                            description={'description of todolist project'}
+                            description={'Stack: TypeScript, React, Redux, Redux Toolkit, Redux-Thunk, ' +
+                                'React-Router-dom, Axios, Formik, TDD, Material UI, Storybook.'}
                             link={'https://chrismelyan.github.io/TodoList/'}
+                            codeLink={'https://github.com/chrismelyan/TodoList'}
                         />
                         <Project
-                            style={cards}
+                            img={"cards"}
                             title={'Learning App'}
-                            description={'description of social network project'}
+                            description={'Stack: TypeScript, React, Redux, Redux-Thunk, ' +
+                                'React-Router-dom, Axios, Formik, Material UI. Team development.'}
                             link={'https://sergeyichnik.github.io/projectFriday/'}
+                            codeLink={'https://github.com/SergeyichNik/projectFriday'}
                         />
                         <Project
-                            style={social}
+                            img={"social"}
                             title={'Social Network'}
-                            description={'description of social network project'}
+                            description={'Stack: TypeScript, React, Redux, Redux-Thunk, ' +
+                                'React-Router-dom, Axios, Formik, Reselect, TDD.'}
                             link={'https://chrismelyan.github.io/Social-Network/'}
+                            codeLink={'https://github.com/chrismelyan/Social-Network'}
                         />
                     </Fade>
                 </div>

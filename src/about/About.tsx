@@ -17,7 +17,7 @@ const About = () => {
     return (
         <div id={'about'} className={s.mainBlock}>
             <div className={stylesContainer.container}>
-                <div className={s.backgroundPicture}>
+                <div className={s.aboutWrapper}>
                     <Fade>
                         <div className={s.about}>
                             <span>Hi there. I'm</span>

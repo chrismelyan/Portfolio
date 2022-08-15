@@ -6,7 +6,7 @@
 
     &::after {
         content: "";
-        background: url('../assets/image/background.jpeg');
+        background: url('../assets/image/background.png');
         background-size: cover;
         opacity: 0.4;
         top: 0;
@@ -20,10 +20,11 @@
     .projectsContainer {
         flex-direction: column;
         justify-content: flex-start;
+        align-items: center;
         .projects {
             width: 100%;
             display: flex;
-            margin-top: 20px;
+            margin-top: 50px;
             justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;

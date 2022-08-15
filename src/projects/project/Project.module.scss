@@ -2,12 +2,32 @@
 @import '../../common/styles/sass/mixins';
 
 .projectBlock {
-  @include blockContainer(400px);
+  @include blockContainer(360px);
   margin: 20px auto;
   transition: ease-in-out transform .8s;
 
   &:hover {
     transform: scale(1.02);
+  }
+
+  .imgContainer {
+    height: 260px;
+    @include flexCenter();
+    background-size: cover;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+  }
+
+  .social {
+    @include skillsImage('../../assets/image/social-network.png');
+  }
+
+  .todolist {
+    @include skillsImage('../../assets/image/todolist.png');
+  }
+
+  .cards {
+    @include skillsImage('../../assets/image/learning-app.png');
   }
 
   .overlay {
@@ -18,56 +38,71 @@
       -webkit-transition: opacity .5s ease-in-out;
       -o-transition: opacity .5s ease-in-out;
       transition: opacity .5s ease-in-out;
+    @include flexCenter;
 
-      &:hover {
-        opacity: 1;
-      }
-
-    .imgContainer {
-      height: 300px;
-      @include flexCenter();
-      background-size: cover;
-      border-top-right-radius: 3px;
-      border-top-left-radius: 3px;
+    &:hover {
+      opacity: 1;
     }
 
-    .projectDescription {
-      padding: 30px 35px;
+    .watchButton {
+      background-color: $primaryColor;
+      @include text(14px, 1, $frontPageTitleColor);
+      height: 60px;
+      padding: 20px;
+      border: none;
+      border-radius: 3px;
+      box-shadow: 2px 3px 7px 0 rgba(15, 15, 20, 0.2);
+      align-self: center;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      transition: ease-in-out background-color 0.5s, color 0.5s;
 
-      .projectTitle {
-        @include text(17px, 1.2, $headingColor);
-        @include block(0.6em, 0.6em, 0, 0);
-      }
-
-      .description {
-        @include text(16px, 1.0, $textColor);
-        margin: 0 0 15px;
-      }
-
-      .imgLink {
+      &:hover {
         color: $primaryColor;
-        font-weight: 600;
-        text-transform: uppercase;
+        background-color: $frontPageTitleColor;
+      }
+    }
+  }
+
+  .projectDescription {
+    padding: 25px 35px;
+
+    .projectTitle {
+      @include text(18px, 1.2, $headingColor);
+      @include block(0.6em, 0.6em, 0, 0);
+    }
+
+    .description {
+      @include text(16px, 1.0, $textColor);
+      margin: 0 0 15px;
+    }
+
+    .imgLink {
+      color: $primaryColor;
+      font-weight: 600;
+      text-transform: uppercase;
+      display: inline-block;
+      letter-spacing: 1px;
+      text-decoration: none;
+      margin-top: 15px;
+      position: relative;
+      transition: .5s ease-in-out;
+
+      &::after {
+        content: '>';
+        color: $primaryColor;
+        font-weight: 700;
         display: inline-block;
-        letter-spacing: 1px;
-        text-decoration: none;
-        margin-top: 15px;
-        position: relative;
+        position: absolute;
+        left: 70px;
         transition: .5s ease-in-out;
+      }
 
-        &::after {
-          content: '>';
-          color: $primaryColor;
-          font-weight: 700;
-          display: inline-block;
-          position: absolute;
-          left: 70px;
-          transition: .5s ease-in-out;
-        }
-
-        &:hover {
-          transform: translateX(15px);
-        }
+      &:hover {
+        transform: translateX(15px);
       }
     }
   }
