@@ -106,5 +106,24 @@
         transform: translateX(15px);
       }
     }
+    @media screen and (max-width: 529px) {
+      .projectTitle {
+        @include text(14px, 1, $headingColor);
+      }
+      .description {
+        @include text(12px, 1, $textColor);
+      }
+    }
+  }
+  @media screen and (max-width: 529px) {
+    .projectDescription {
+      padding: 13px 20px;
+    }
+  }
+}
+@media screen and (max-width: 529px) {
+  .projectBlock {
+    @include blockContainer(260px);
+    height: 350px;
   }
 }
