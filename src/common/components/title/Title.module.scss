@@ -21,6 +21,24 @@
         left: 50%;
         transform: translate(-50%, 50%);
     }
+
+    @media screen and (max-width: 649px) {
+        h1 {
+            @include text(25px, 1.2, $headingColor);
+            font-weight: 500;
+        }
+    }
+    @media screen and (max-width: 529px) {
+        h1 {
+            @include text(20px, 1.2, $headingColor);
+            font-weight: 500;
+        }
+    }
+}
+@media screen and (max-width: 529px) {
+    .title {
+        text-align: center;
+    }
 }
 
 

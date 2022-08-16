@@ -30,6 +30,40 @@
         width: 350px;
         height: 350px;
       }
+
+      @media screen and (max-width: 1249px) {
+        .paragraph {
+          @include text(18px, 1.5, $headingColor);
+          padding: 35px;
+        }
+        img {
+          width: 250px;
+          height: 250px;
+          margin-right: 20px;
+        }
+      }
+
+      @media screen and (max-width: 964px) {
+        .paragraph {
+          width: 95%;
+          @include text(15px, 1.5, $headingColor);
+          padding: 30px;
+          text-align: center;
+        }
+        img {
+          width: 250px;
+          height: 250px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 964px) {
+      .skillsWrapper {
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
     }
 
     .skills {

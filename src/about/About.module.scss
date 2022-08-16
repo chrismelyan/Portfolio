@@ -83,7 +83,7 @@
           font-weight: 700;
         }
         .text {
-          @include text(15px, 1, $frontPageTitleColor);
+          @include text(14px, 1, $frontPageTitleColor);
           font-weight: 400;
         }
       }
@@ -98,6 +98,13 @@
             background-color: $frontPageTitleColor;
           }
         }
+      }
+    }
+
+    @media screen and (max-width: 684px) {
+      .about {
+        padding: 0;
+        text-align: center;
       }
     }
   }
