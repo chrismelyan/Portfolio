@@ -15,17 +15,16 @@
       width: 100%;
       margin-top: 30px;
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
 
       .paragraph {
         width: 65%;
         @include text(22px, 1.5, $headingColor);
         padding: 40px;
-        //text-align: center;
       }
 
       img {
-        //border: $primaryColor 3px solid;
         background-color: rgba(23, 23, 23, 0.1);
         border-radius: 100%;
         width: 350px;

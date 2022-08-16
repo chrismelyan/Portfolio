@@ -3,6 +3,7 @@
 
 .projectBlock {
   @include blockContainer(360px);
+  height: 500px;
   margin: 20px auto;
   transition: ease-in-out transform .8s;
 
