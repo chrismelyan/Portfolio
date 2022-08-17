@@ -15,7 +15,8 @@ const Skills = () => {
         {id: 4, title: 'CSS/SASS', icon: 'sass'},
         {id: 5, title: 'React', icon: 'react'},
         {id: 6, title: 'Redux', icon: 'redux'},
-        {id: 7, title: 'GitHub', icon: 'github'}
+        {id: 7, title: 'GitHub', icon: 'github'},
+        {id: 8, title: 'Material UI', icon: 'material'}
     ]
     return (
         <div id={'skills'} className={s.skillsBlock}>

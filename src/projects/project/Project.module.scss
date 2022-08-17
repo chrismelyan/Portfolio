@@ -65,6 +65,12 @@
         color: $primaryColor;
         background-color: $frontPageTitleColor;
       }
+      //@media screen and (max-width: 529px) {
+      //  .watchButton:hover {
+      //    background-color: #f44336;
+      //    color: $frontPageTitleColor;
+      //  }
+      //}
     }
   }
 
@@ -124,6 +130,11 @@
 @media screen and (max-width: 529px) {
   .projectBlock {
     @include blockContainer(260px);
-    height: 350px;
+    height: auto;
   }
+  .watchButton:hover {
+    background-color: #f44336;
+    color: $frontPageTitleColor;
+  }
+
 }

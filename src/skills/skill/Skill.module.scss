@@ -2,11 +2,11 @@
 @import '../../common/styles/sass/variables';
 
 .skill {
-  @include blockContainer(150px);
+  @include blockContainer(130px);
   margin: 10px auto;
   align-items: center;
   text-align: center;
-  padding: 15px;
+  padding: 12px;
   transition: ease-in-out transform .5s;
 
   &:hover {
@@ -66,12 +66,12 @@
     @include skillsImage('../../assets/skills-image/icon-material.png');
   }
 
-  .learn {
-    @include skillsImage('../../assets/skills-image/icon-learn.png');
-  }
-
   .typescript {
     @include skillsImage('../../assets/skills-image/icon-typescript.png');
+  }
+
+  .material {
+    @include skillsImage('../../assets/skills-image/icon-material.png');
   }
 
   @media screen and (max-width: 693px) {
