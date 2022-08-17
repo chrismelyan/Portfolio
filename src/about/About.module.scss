@@ -53,6 +53,7 @@
         margin: 10px 0;
       }
 
+
       @media screen and (max-width: 1014px) {
         .text {
           @include text(28px, 1, $frontPageTitleColor);
@@ -87,6 +88,11 @@
           font-weight: 400;
         }
       }
+      @media screen and (max-height: 600px) {
+        h1 {
+          @include text(40px, 0, $frontPageTitleColor);
+        }
+      }
 
       .buttonContainer {
         width: 200px;
@@ -103,10 +109,17 @@
 
     @media screen and (max-width: 684px) {
       .about {
+        height: auto;
         padding: 0;
         text-align: center;
-        height: 100%;
-        margin-top: 20px;
+      }
+    }
+    @media screen and (max-height: 600px) {
+      .about {
+        margin-top: 0;
+      }
+      .buttonContainer {
+        margin-top: 10px;
       }
     }
   }
