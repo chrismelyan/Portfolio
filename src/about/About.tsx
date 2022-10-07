@@ -10,7 +10,6 @@ const Fade = require("react-reveal/Fade");
 
 const About = () => {
     const saveFile = () => {
-        debugger
        saveAs(myCV, "CV_Melyan_FD.pdf");
     }
 
