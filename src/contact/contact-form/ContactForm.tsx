@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import * as Yup from 'yup';
 import s from './ContactForm.module.scss';
 import d from '../../common/components/button/Button.module.scss';
 import {useFormik} from "formik";
@@ -12,29 +13,19 @@ const ContactForm = () => {
     const messageSent = 'Thank you! Your message has been sent.';
     const errorMessage = 'Oops! Something went wrong. Try again.';
 
+    const validation = Yup.object({
+        name: Yup.string().required('Name is required'),
+        email: Yup.string().required('Email is required'),
+        message: Yup.string().required('Please text your message')
+    })
+
     const formik = useFormik({
         initialValues: {
             name: '',
             email: '',
             message: ''
         },
-        validate: values => {
-            const errors = {
-                name: '',
-                email: '',
-                message: ''
-            };
-            if (!values.name) {
-                errors.name = 'Name is required';
-            }
-            if (!values.email) {
-                errors.email = 'Email is required';
-            }
-            if (!values.message) {
-                errors.message = 'Please text a message';
-            }
-            return errors;
-        },
+        validationSchema: validation,
         onSubmit: (values: ContactFormType) => {
             contactAPI.contactForm(values)
                 .then(() => {
